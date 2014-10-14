@@ -1,7 +1,7 @@
 # read-font-cmap
 
 [![Build Status](https://travis-ci.org/shinnn/read-font-cmap.svg?branch=master)](https://travis-ci.org/shinnn/read-font-cmap)
-[![Build status](https://ci.appveyor.com/api/projects/status/2a35xhls3avqvpoo?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/node-font-cmap-259)
+[![Build status](https://ci.appveyor.com/api/projects/status/507uq9x81gspk8wb?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/read-font-cmap)
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/read-font-cmap.svg)](https://coveralls.io/r/shinnn/read-font-cmap)
 [![Dependency Status](https://david-dm.org/shinnn/read-font-cmap.svg)](https://david-dm.org/shinnn/read-font-cmap)
 [![devDependency Status](https://david-dm.org/shinnn/read-font-cmap/dev-status.svg)](https://david-dm.org/shinnn/read-font-cmap#info=devDependencies)
