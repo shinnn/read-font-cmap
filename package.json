@@ -1,6 +1,6 @@
 {
   "name": "read-font-cmap",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "parse CMap of a TrueType/OpenType font file",
   "repository": "shinnn/read-font-cmap",
   "author": {
