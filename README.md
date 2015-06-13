@@ -1,10 +1,11 @@
 # read-font-cmap
 
+[![NPM version](https://img.shields.io/npm/v/read-font-cmap.svg)](https://www.npmjs.com/package/read-font-cmap)
 [![Build Status](https://travis-ci.org/shinnn/read-font-cmap.svg?branch=master)](https://travis-ci.org/shinnn/read-font-cmap)
 [![Build status](https://ci.appveyor.com/api/projects/status/507uq9x81gspk8wb?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/read-font-cmap)
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/read-font-cmap.svg)](https://coveralls.io/r/shinnn/read-font-cmap)
-[![Dependency Status](https://david-dm.org/shinnn/read-font-cmap.svg)](https://david-dm.org/shinnn/read-font-cmap)
-[![devDependency Status](https://david-dm.org/shinnn/read-font-cmap/dev-status.svg)](https://david-dm.org/shinnn/read-font-cmap#info=devDependencies)
+[![Dependency Status](https://img.shields.io/david/shinnn/read-font-cmap.svg?label=deps)](https://david-dm.org/shinnn/read-font-cmap)
+[![devDependency Status](https://img.shields.io/david/dev/shinnn/read-font-cmap.svg?label=devDeps)](https://david-dm.org/shinnn/read-font-cmap#info=devDependencies)
 
 A [Node](http://nodejs.org/) module to parse [CMap](http://www.microsoft.com/typography/otspec/cmap.htm) of a TrueType/OpenType font file
 
@@ -22,18 +23,16 @@ readFontCmap('bower_components/font-awesome/fonts/FontAwesome.otf', function(err
 
 ## Installation
 
-[![NPM version](https://badge.fury.io/js/read-font-cmap.svg)](https://www.npmjs.org/package/read-font-cmap)
+[Use npm.](https://docs.npmjs.com/cli/install)
 
-[Use npm](https://www.npmjs.org/doc/cli/npm-install.html).
-
-```sh
+```
 npm install read-font-cmap
 ```
 
 ## API
 
 ```javascript
-var readFontCmap = require('read-font-cmap');
+const readFontCmap = require('read-font-cmap');
 ```
 
 ### readFontCmap(*filePath*, *callback*)
@@ -56,7 +55,7 @@ The second argument represents CMap table in the form:
 }
 ```
 
-[Here](https://raw.githubusercontent.com/shinnn/read-font-cmap/master/test/fixture.json) is a real-life example, the result of parsing [Font Awesome](http://fortawesome.github.io/Font-Awesome/) CMap table.
+[Here](https://raw.githubusercontent.com/shinnn/read-font-cmap/master/test/fixture.json) is a real-life example, the result of parsing [Font Awesome](https://fortawesome.github.io/Font-Awesome/) CMap table.
 
 ### readFontCmap.sync(*filePath*)
 
@@ -66,13 +65,13 @@ Return: `Object` (CMap table)
 Synchronous version of [`readFontCmap`](#readfontcmapfilepath-callback).
 
 ```javascript
-var readFontCmap = require('read-font-cmap');
+const readFontCmap = require('read-font-cmap');
 readFontCmap.sync('bower_components/font-awesome/fonts/FontAwesome.otf');
 //=> {"32": 1, "168": 6, "169": 12, "174": 10, ... }
 ```
 
 ## License
 
-Copyright (c) 2014 [Shinnosuke Watanabe](https://github.com/shinnn)
+Copyright (c) 2014 - 2015 [Shinnosuke Watanabe](https://github.com/shinnn)
 
 Licensed under [the MIT License](./LICENSE).
