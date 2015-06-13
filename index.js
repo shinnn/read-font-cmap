@@ -31,6 +31,6 @@ module.exports = function readFontCmap(filePath, cb) {
   });
 };
 
-module.exports.sync = function readFontCmap(filePath) {
+module.exports.sync = function readFontCmapSync(filePath) {
   return fontCmap(fs.readFileSync(filePath));
 };
