@@ -1,7 +1,6 @@
 'use strict';
 
 var isPlainObject = require('lodash').isPlainObject;
-var noop = require('nop');
 var readFontCmap = require('./');
 var test = require('tape');
 
@@ -16,23 +15,26 @@ test('readFontCmap()', function(t) {
   });
 
   t.throws(
-    readFontCmap.bind(null), /function/,
+    readFontCmap.bind(null),
+    /TypeError.*function/,
     'should throw an error when it takes no arguments.'
   );
 
   t.throws(
-    readFontCmap.bind(null, 1, noop), /path/,
+    readFontCmap.bind(null, 1, t.fail),
+    /TypeError.*path/,
     'should throw an error when it takes non-string argument.'
   );
 
   t.throws(
-    readFontCmap.bind(null, fontPath), /function/,
+    readFontCmap.bind(null, fontPath),
+    /TypeError.*function/,
     'should throw an error when it doesn\'t take the second argument.'
   );
 
   t.throws(
     readFontCmap.bind(null, fontPath, {foo: true}),
-    /function/,
+    /TypeError.*function/,
     'should throw an error when the second argument is not a function.'
   );
 
