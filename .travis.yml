@@ -1,8 +1,12 @@
+sudo: false
+git:
+  depth: 2
+branches:
+  except: /^v\d/
 language: node_js
 node_js:
-  - '0.10'
-  - '0.11'
-after_script:
-  - npm run-script coveralls
+  - iojs
+  - node
+after_script: npm run-script coveralls
 notifications:
   email: false
