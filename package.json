@@ -32,12 +32,12 @@
   },
   "devDependencies": {
     "@shinnn/eslintrc-node": "^1.0.2",
-    "eslint": "^0.22.1",
+    "eslint": "^0.24.0",
     "font-awesome": "^4.3.0",
-    "istanbul": "^0.3.15",
+    "istanbul": "^0.3.17",
     "istanbul-coveralls": "^1.0.3",
-    "lodash.isplainobject": "^3.1.0",
-    "tap-spec": "^4.0.0",
+    "lodash.isplainobject": "^3.2.0",
+    "tap-spec": "^4.0.2",
     "tape": "^4.0.0"
   }
 }
