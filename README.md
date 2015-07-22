@@ -7,12 +7,12 @@
 [![Dependency Status](https://img.shields.io/david/shinnn/read-font-cmap.svg?label=deps)](https://david-dm.org/shinnn/read-font-cmap)
 [![devDependency Status](https://img.shields.io/david/dev/shinnn/read-font-cmap.svg?label=devDeps)](https://david-dm.org/shinnn/read-font-cmap#info=devDependencies)
 
-A [Node](http://nodejs.org/) module to parse [CMap](http://www.microsoft.com/typography/otspec/cmap.htm) of a TrueType/OpenType font file
+A [Node](http://nodejs.org/) module to parse [CMap](https://www.microsoft.com/typography/otspec/cmap.htm) of a TrueType/OpenType font file
 
 ```javascript
-var readFontCmap = require('read-font-cmap');
+const readFontCmap = require('read-font-cmap');
 
-readFontCmap('bower_components/font-awesome/fonts/FontAwesome.otf', function(err, map) {
+readFontCmap('bower_components/font-awesome/fonts/FontAwesome.otf', (err, map) => {
   if (err) {
     throw err;
   }
